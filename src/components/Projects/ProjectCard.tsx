@@ -25,7 +25,7 @@ interface Project {
     text: string;
     author: string;
     position: string;
-  };
+  }| null;
 }
 
 interface ProjectCardProps {
