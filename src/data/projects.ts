@@ -12,7 +12,7 @@ export const projects = [
     featured: false,
     tech: ["Flutter", "Firebase"],
     links: {
-      github: "https://github.com/rajafawady/kaamsaz",
+    
     },
     highlights: [
       "Integrated multilingual support (Urdu and English)",
@@ -43,7 +43,7 @@ export const projects = [
     tech: ["MERN Stack", "Next.js", "Redux", "Firebase", "Map API"],
     links: {
       live: "https://pointrush.com",
-      github: "https://github.com/rajafawady/pointrush",
+      
       demo: "https://demo.pointrush.com"
     },
     highlights: [
@@ -75,7 +75,7 @@ export const projects = [
     tech: ["MERN Stack", "Node.js", "MongoDB", "React"],
     links: {
       live: "https://restaurantreviews.com",
-      github: "https://github.com/rajafawady/restaurant-review-system",
+      
       demo: "https://demo.restaurantreviews.com"
     },
     highlights: [
@@ -90,38 +90,7 @@ export const projects = [
       position: "Restaurant Owner"
     }
   },
-  {
-    id: 10,
-    title: "TEDxNUST'23 Website",
-    shortDescription: "Event website for TEDxNUST 2023, showcasing speakers and agenda",
-    longDescription: `A responsive event website developed using Next.js, React.js, and Tailwind CSS, providing detailed information about TEDxNUST'23, 
-                     including speaker profiles, the event agenda, and ticketing options. The site is designed to offer an intuitive user experience.`,
-    thumbnail: "/tedx-nust-thumbnail.jpg",
-    images: [
-      "/tedx-nust-1.jpg",
-      "/tedx-nust-2.jpg",
-      "/tedx-nust-3.jpg"
-    ],
-    category: "web",
-    featured: false,
-    tech: ["Next.js", "React.js", "Tailwind CSS", "JavaScript"],
-    links: {
-      live: "https://tedxnust23.com",
-      github: "https://github.com/rajafawady/tedx-nust-website",
-      demo: "https://demo.tedxnust23.com"
-    },
-    highlights: [
-      "Built a fully responsive event website optimized for mobile devices",
-      "Created a dynamic speaker profile and agenda section",
-      "Integrated ticket booking and event registration system",
-      "Enhanced user experience with smooth navigation and fast load times"
-    ],
-    testimonial: {
-      text: "The TEDxNUST'23 website helped us showcase the event with style.",
-      author: "Sana Malik",
-      position: "Event Coordinator"
-    }
-  },
+
   {
     id: 9,
     title: "TikTok Video Downloader App",
@@ -175,7 +144,7 @@ export const projects = [
     tech: ["PHP", "Laravel"],
     links: {
       live: "https://aquexpress.com",
-      github: "https://github.com/rajafawady/aquexpress"
+    
     },
     highlights: [
       "Developed scheduling and instant delivery features",
@@ -204,7 +173,7 @@ export const projects = [
     tech: ["Next.js", "TypeScript"],
     links: {
       live: "https://codeknitters.com",
-      github: "https://github.com/rajafawady/codeknitters-website"
+    
     },
     highlights: [
       "Developed with a focus on sleek and functional design",
@@ -235,7 +204,7 @@ export const projects = [
     tech: ["Flutter", "Dart"],
     links: {
       live: "https://expense-tracker-app.com",
-      github: "https://github.com/rajafawady/flutter-expense-tracker"
+      
     },
     highlights: [
       "Developed with intuitive categorization and input features",
@@ -270,7 +239,7 @@ export const projects = [
     tech: ["Flutter", "Dart", "Riverpod"],
     links: {
       live: "https://flutter-meals-app.com",
-      github: "https://github.com/rajafawady/flutter-meals-app"
+      
     },
     highlights: [
       "Developed cross-platform compatibility for iOS and Android",
