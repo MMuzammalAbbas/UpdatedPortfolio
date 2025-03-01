@@ -328,7 +328,7 @@ export const projects = [
     shortDescription: "Comprehensive fitness app with real-time features",
     longDescription: `Developed a Fitness Management System using React, Node.js, and Express.js. The app includes user cart management, 
                       seamless browsing, and Firebase integration for real-time data, managing 200+ daily transactions.`,
-    thumbnail: "/projects/fitness-management/thumbnail.jpg",
+    thumbnail: "/projects/fitness/1.png",
     images: [],
     category: "web",
     featured: false,
