@@ -260,8 +260,10 @@ export const projects = [
     longDescription: `Worked on the engineering model of a 3U CubeSat mission under APSCO. The mission aims to monitor glaciers 
                       and predict disasters in the Karakoram, Himalaya, and Hindu Kush ranges by tracking glacier dynamics, ice melt, 
                       and glacial lake formations at the height of 500km.`,
-    thumbnail: "/projects/pktrailblazer/thumbnail.jpg",
-    images: [],
+    thumbnail: "/projects/cubesat/1.png",
+    images: [
+      "/projects/cubesat/1.png"
+    ],
     category: "research",
     featured: false,
     tech: ["Satellite Engineering", "APSCO"],
@@ -280,8 +282,13 @@ export const projects = [
     longDescription: `Developed an e-commerce store enabling users to virtually try dresses by uploading images. 
                       Features include size recommendations, image search, and advanced virtual try-on capabilities 
                       using computer vision models.`,
-    thumbnail: "/projects/try-on-cart/thumbnail.jpg",
-    images: [],
+    thumbnail: "/projects/tryoncart/1.png",
+    images: [
+      "/projects/tryoncart/1.png",
+      "/projects/tryoncart/2.png",
+      "/projects/tryoncart/3.png",
+      "/projects/tryoncart/4.png",
+    ],
     category: "web",
     featured: false,
     tech: ["Next.js", "Node.js", "MongoDB", "HR VITON", "AI/ML"],
@@ -300,7 +307,7 @@ export const projects = [
     longDescription: `Developed an Internship Management System for InoTech Solutions using PHP and MySQL. 
                       The system enables interns to check their application status, assigned department, and advisor. 
                       HR can manage applications, assign departments, and handle approvals or rejections.`,
-    thumbnail: "/projects/ino-tech/thumbnail.jpg",
+    thumbnail: "/projects/internship/1.png",
     images: [],
     category: "web",
     featured: false,
@@ -340,7 +347,7 @@ export const projects = [
     shortDescription: "Facial analysis app for security and authentication",
     longDescription: `Built a face recognition app utilizing the Clarifai API for precise facial analysis in security and authentication. 
                       Enhanced machine learning accuracy to 95% across applications.`,
-    thumbnail: "/projects/face-recognition/thumbnail.jpg",
+    thumbnail: "/projects/face/1.png",
     images: [],
     category: "mobile",
     featured: false,
@@ -361,8 +368,11 @@ export const projects = [
     shortDescription: "Robust app for food ordering and real-time tracking",
     longDescription: `Developed a food ordering app including live order status, a robust checkout method, and categorized menu systems. 
                       Designed admin and customer interfaces with login authentication using Auth0.`,
-    thumbnail: "/projects/food-ordering/thumbnail.jpg",
-    images: [],
+    thumbnail: "/projects/food-ordering/hero.png",
+    images: [
+      "/projects/food-ordering/hero.png",
+      "/projects/food-ordering/landing.png"
+    ],
     category: "web",
     featured: false,
     tech: ["Vite", "Node.js", "Auth0", "React"],
@@ -383,8 +393,14 @@ export const projects = [
     longDescription: `Developed a robust consultancy platform for MNIP Law Firm to streamline client interactions, case management, and legal service delivery. 
                       The platform facilitates seamless communication between clients and legal experts, offering features such as appointment scheduling, case tracking, 
                       and a secure document upload system. Built with React, Tailwind CSS, Node.js, and Express.js, ensuring a responsive and scalable solution.`,
-    thumbnail: "/projects/mnip-law/thumbnail.jpg",
-    images: [],
+    thumbnail: "/projects/law/1.png",
+    images: [
+      "/projects/law/1.png",
+      "/projects/law/2.png",
+      "/projects/law/3.png",
+      "/projects/law/4.png",
+      "/projects/law/5.png",
+    ],
     category: "web",
     featured: true,
     tech: ["React", "Tailwind CSS", "Node.js", "Express.js"],
