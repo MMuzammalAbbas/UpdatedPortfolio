@@ -419,7 +419,76 @@ export const projects = [
       author: "Hamza Malik",
       position: "Managing Partner, MNIP Law Firm",
     },
+    
+  },
+  {
+    id: 17,
+    title: "Gestmotor - Vehicle Tax & Registration System",
+    shortDescription: "Automated vehicle tax and registration system for Spain",
+    longDescription: "Developed an advanced vehicle information system for Gestmotor, a Spanish client, to automate legal document verification, ownership authorization, tax calculation, and vehicle transactions. The system integrates real-time vehicle taxation APIs to ensure accuracy and compliance. Built using FlutterFlow for the frontend and Google Cloud Functions for seamless backend operations.",
+    thumbnail: "/projects/gestmotor/g3.png",
+    images: [
+      "/projects/gestmotor/g1.png",
+      "/projects/gestmotor/g2.png",
+      "/projects/gestmotor/g3.png",
+      "/projects/gestmotor/g4.png",
+      "/projects/gestmotor/g5.png",
+      "/projects/gestmotor/g6.png",
+      "/projects/gestmotor/g7.png"
+    ],
+    category: "web",
+    featured: true,
+    tech: ["FlutterFlow", "Google Cloud Functions", "Firebase"],
+    links: {
+      live: "https://gestmotor.com",
+      github: "https://github.com/username/gestmotor"
+    },
+    highlights: [
+      "Automated tax calculation and registration system",
+      "Integrated legal document verification for vehicle transactions",
+      "Developed a user-friendly platform with real-time taxation APIs",
+      "Optimized for efficiency and legal compliance in Spain"
+    ],
+    testimonial: {
+      text: "Gestmotor streamlined our vehicle tax and registration processes, making transactions faster and more reliable.",
+      author: "Carlos Fernández",
+      position: "CEO, Gestmotor"
+    }
+  },
+  {
+    id: 16,
+    title: "MyConsultor - AI Tax Consultation Chatbot",
+    shortDescription: "AI-powered chatbot for tax consultation in Spain",
+    longDescription: "Developed an AI-driven tax consultation chatbot for MyConsultor, a Spanish legal tech firm. The chatbot provides real-time tax information, integrates BOE APIs for up-to-date legal references, and assists users with tax-related queries using OpenAI's language model. The system is built with FlutterFlow for the frontend and Google Cloud Functions for backend processing, ensuring a seamless user experience.",
+    thumbnail: "/projects/myconsultor/c5.png",
+    images: [
+      "/projects/myconsultor/C1.png",
+      "/projects/myconsultor/c2.png",
+      "/projects/myconsultor/c3.png",
+      "/projects/myconsultor/c4.png",
+      "/projects/myconsultor/c5.png"
+    ],
+    category: "web",
+    featured: true,
+    tech: ["FlutterFlow", "OpenAI", "Google Cloud Functions"],
+    links: {
+      live: "https://myconsultor.com",
+      github: "https://github.com/username/myconsultor"
+    },
+    highlights: [
+      "Developed a tax consultation chatbot with OpenAI's API",
+      "Integrated BOE APIs for real-time Spanish tax laws",
+      "Built a scalable and secure system with Google Cloud Functions",
+      "Enhanced user experience with intuitive chatbot interactions"
+    ],
+    testimonial: {
+      text: "MyConsultor revolutionized our tax consultation process, making legal information accessible and accurate for our clients.",
+      author: "Sergio Martín",
+      position: "Founder, MyConsultor"
+    }
   }
+  
+
   
   
 ];
