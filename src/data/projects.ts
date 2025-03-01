@@ -405,7 +405,7 @@ export const projects = [
     featured: true,
     tech: ["React", "Tailwind CSS", "Node.js", "Express.js"],
     links: {
-      live: "https://mnip-lawfirm.com",
+      live: "https://mnip.netlify.app/",
       github: "https://github.com/username/mnip-law-firm",
     },
     highlights: [
