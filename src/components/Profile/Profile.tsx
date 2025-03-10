@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
-import { CodeXml, Mail, Phone, MapPin, Calendar, Briefcase, GraduationCap } from 'lucide-react';
+import { CodeXml, Mail, Phone, MapPin, Calendar, Briefcase, GraduationCap, Download, Eye } from 'lucide-react';
 import { useRouter } from 'next/router';
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -117,7 +117,7 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
               {user.title}
             </motion.h2>
             <motion.p 
-              className="text-gray-700 dark:text-gray-300 max-w-2xl mb-6"
+              className="text-white-700 dark:text-white-700 max-w-2xl mb-6"
               variants={itemVariants}
             >
               {user.about.summary}
@@ -135,6 +135,22 @@ const Profile: React.FC<ProfileProps> = ({ user }) => {
                 <Calendar className="mr-2 h-4 w-4" />
                 Schedule Meeting
               </Button>
+              <motion.div className="flex flex-wrap gap-4 justify-center md:justify-start">
+  <a href="/Muzammal.pdf" download="Muzammal.pdf">
+    <Button variant="outline" className="text-gray-900 dark:text-gray-300 border-indigo-500 hover:bg-indigo-500">
+      <Download className="mr-2 h-4 w-4" />
+      Download CV
+    </Button>
+  </a>
+  <Button
+    variant="outline"
+    className="text-gray-900 dark:text-gray-300 border-indigo-500 hover:bg-indigo-500"
+    onClick={() => window.open('/Muzammal.pdf', '_blank')}
+  >
+    <Eye className="mr-2 h-4 w-4" />
+    View CV
+  </Button>
+</motion.div>
             </motion.div>
           </div>
         </motion.div>

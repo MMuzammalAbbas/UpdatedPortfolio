@@ -9,6 +9,7 @@ export const terminalCommands: CommandGroups = {
     skills: { desc: "List technical skills", category: "navigation" },
     projects: { desc: "View portfolio projects", category: "navigation" },
     contact: { desc: "Show contact information", category: "navigation" },
+    resume: { desc: "Download my resume", category: "navigation" },
     
   },
   advanced: {

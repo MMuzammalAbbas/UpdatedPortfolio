@@ -95,7 +95,7 @@ const SkillMap = ({ skills }: QuestProps) => {
               <QuestIcon className="w-6 h-6 md:w-8 md:h-8 text-indigo-500 dark:text-indigo-300" />
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white">{path.title}</h2>
             </div>
-            <p className="text-gray-700 dark:text-gray-300 font-serif text-sm md:text-base">{path.description}</p>
+            <p className="text-white-700 dark:text-gray-300 font-serif text-sm md:text-base">{path.description}</p>
           </div>
   
           <div className="p-4 md:p-8 space-y-4 md:space-y-6 max-h-[60vh] overflow-y-auto scrollbar-thin scrollbar-thumb-indigo-500/30 scrollbar-thumb-indigo-400 dark:scrollbar-thumb-indigo-500/40 scrollbar-track-transparent hover:scrollbar-thumb-indigo-400">
@@ -123,7 +123,7 @@ const SkillMap = ({ skills }: QuestProps) => {
                       <Trophy className="w-5 h-5 md:w-6 md:h-6 ttext-gray-900 dark:text-indigo-300" />
                     </div>
                     {skill.description && (
-                      <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">{skill.description}</p>
+                      <p className="text-sm md:text-base text-white-700 dark:text-gray-300">{skill.description}</p>
                     )}
                     <div className="flex items-center gap-3 md:gap-4">
                       <div className="flex gap-1">
@@ -212,11 +212,11 @@ const SkillMap = ({ skills }: QuestProps) => {
                   <div className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-xl bg-white/10 backdrop-blur-lg flex items-center justify-center
                     shadow-lg border border-indigo-500 dark:border-indigo-500/30 hover:border-indigo-500 transition-all duration-300
                     hover:shadow-indigo-500/20 hover:shadow-xl">
-                    <PathIcon className="w-5 h-5 md:w-7 md:h-7 lg:w-8 lg:h-8 text-gray-700 dark:text-indigo-300 group-hover:text-indigo-400" />
+                    <PathIcon className="w-5 h-5 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white-700 dark:text-indigo-300 group-hover:text-indigo-400" />
                   </div>
                 </button>
                 <div className="text-center">
-                  <h3 className="text-xs md:text-sm lg:text-lg font-bold text-gray-700 dark:text-white font-serif whitespace-nowrap">
+                  <h3 className="text-xs md:text-sm lg:text-lg font-bold text-white-700 dark:text-white font-serif whitespace-nowrap">
                     {path.title}
                   </h3>
                   <Badge className="bg-indigo-500 dark:bg-indigo-500/20 text-white dark:text-indigo-300 text-[0.6rem] md:text-xs lg:text-sm">

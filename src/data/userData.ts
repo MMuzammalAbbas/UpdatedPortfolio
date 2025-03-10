@@ -1,6 +1,6 @@
 export const userData = {
   name: "M Muzammal Abbas",
-  title: "Full Stack & Mobile Developer",
+  title: "Full Stack Developer",
   about: {
     summary: `Passionate full-stack developer with 2+ years of experience building scalable web applications.
              Specialized in React, Next.js, PHP, and FlutterFlow development.`,

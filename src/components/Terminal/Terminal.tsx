@@ -23,6 +23,8 @@ export const Terminal: React.FC<TerminalProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const { showGame, setShowGame } = useGame();
   const router= useRouter();
+  const [matrixActive, setmatrixActive] = useState(false);
+
 
 
   useEffect(() => {
@@ -82,10 +84,20 @@ export const Terminal: React.FC<TerminalProps> = ({
         onThemeToggle?.();
         addEntry('Theme toggled!');
         return true;
-      case 'matrix':
-        onMatrixToggle?.();
-        addEntry('Matrix effect toggled!');
-        return true;
+        case 'matrix':
+  console.log('Matrix toggle function is called!');
+
+  if (matrixActive) {
+    onMatrixToggle?.(); // Stop effect
+    addEntry('Matrix effect stopped!');
+  } else {
+    onMatrixToggle?.(); // Start effect
+    addEntry('Matrix effect toggled!');
+    addEntry('Type "matrix" again to stop the effect.');
+  }
+
+  setmatrixActive((prev) => !prev); // Toggle state
+  return true;
       case 'game':
         setShowGame(true);
         addEntry('Lets Play!');
@@ -158,7 +170,19 @@ export const Terminal: React.FC<TerminalProps> = ({
           } else if (trimmedCommand === 'contact') {
             addEntry('Navigating to Contact page...');
             router.push('/contact');
-          }
+          } else if (trimmedCommand === 'resume') {  // ✅ Handle Resume Download
+            const resumeUrl = '/Muzammal.pdf';  // ✅ Update with your actual file name
+            const link = document.createElement('a');
+            link.href = resumeUrl;
+            link.download = 'Muhammad_Muzammal_Resume.pdf';  // Customize the downloaded file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            addEntry('Downloading resume...');
+            setTimeout(() => {
+              addEntry('Resume downloaded successfully!');
+          }, 2000); 
+        }
           break;
         case 'entertainment':
           addEntry(`Loading ${trimmedCommand}...`);
@@ -246,20 +270,14 @@ export const Terminal: React.FC<TerminalProps> = ({
 
   const getRandomQuote = async () => {
     // List of categories to choose from
-    const categories = ['change', 'failure', 'great', 'inspirational', 'learning', 'success'];
-  
-    // Choose a random category
-    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
-  
     try {
-      // Make the API request to fetch a quote from the chosen category
-      const response = await fetch(`https://api.api-ninjas.com/v1/quotes?category=${randomCategory}`, {
-        method: 'GET',
-        headers: {
-          'X-Api-Key': 'bYULVoaIKgMN+fscclr0fQ==sG55msNm7r4TZskr', // Add your API key here
-        },
+      const response = await fetch(`https://api.api-ninjas.com/v1/quotes`, {
+          method: 'GET',
+          headers: {
+              'X-Api-Key': 'bYULVoaIKgMN+fscclr0fQ==sG55msNm7r4TZskr',
+          },
       });
-  
+       
       // Check if the response is ok
       if (!response.ok) {
         throw new Error('Failed to fetch quote');

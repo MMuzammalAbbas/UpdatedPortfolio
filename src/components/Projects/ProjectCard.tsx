@@ -122,7 +122,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {/* Scrollable Content */}
           <div className="space-y-4 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800">
             {/* Long Description */}
-            <p className="text-gray-700 dark:text-gray-300">{project.longDescription}</p>
+            <p className="text-white-700 dark:text-gray-300">{project.longDescription}</p>
 
             {/* Highlights */}
             <div className="space-y-2">
@@ -139,7 +139,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {/* Testimonial */}
             {project.testimonial && (
               <div className="bg-blue-50 dark:bg-blue-800 p-4 rounded-lg">
-                <p className="italic text-gray-700 dark:text-gray-300">&quot;{project.testimonial.text}&quot;</p>
+                <p className="italic text-white-700 dark:text-gray-300">&quot;{project.testimonial.text}&quot;</p>
                 <div className="mt-2 text-sm">
                   <span className="font-semibold text-gray-900 dark:text-gray-100">{project.testimonial.author}</span>
                   <span className="text-gray-500 dark:text-gray-400"> - {project.testimonial.position}</span>
